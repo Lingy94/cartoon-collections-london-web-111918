@@ -23,5 +23,4 @@ def find_the_cheese(foods)
     return "#{cheese_types[2]}"
     end
    return nil
-  end
 end
