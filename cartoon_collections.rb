@@ -15,10 +15,13 @@ end
 
 def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  for i in 0..foods.length
-  if foods.include? == cheese_types[i]
-    return "#{cheese_types[i]}"
-  end
-  return nil
+    if foods.include? == cheese_types[0]
+      return "#{cheese_types[0]}"
+   elsif foods.include? == cheese_types[1]
+      return "#{cheese_types[1]}"
+   elsif foods.include? == cheese_types[2]
+      return "#{cheese_types[2]}"
+    end
+   return nil
   end
 end
