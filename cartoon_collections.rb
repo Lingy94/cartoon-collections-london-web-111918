@@ -10,13 +10,7 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(words)
- for i in 0..words.length
-   if words[i].length > 4 
-     return true
-     elsif words[i].length <= 4
-     return false
-   end
- end
+ words.any? { |x| x.length > 4 }
 end
 
 def find_the_cheese(foods)
